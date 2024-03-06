@@ -1,2 +1,2 @@
-# Client-Server-C-
-Example of Client-Server model (with different options).
+# Client/Server
+Examples of Client/Server model (with different options).
