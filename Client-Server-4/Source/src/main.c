@@ -40,9 +40,6 @@ int parse(int argc, char *argv[]){
 			flag = 1;
 		}
 		
-		/*if(strcmp(*(argv+i), "-key") == 0){ 
-			key = 1;
-		}*/
 		
 		/*if(strcmp(*(argv+i), "-rsa") == 0 || strcmp(*(argv+i), "-elgamal") == 0 ||strcmp(*(argv+i), "-rabin") == 0){
 			strcpy(encrypt, *(argv+i));
@@ -62,15 +59,7 @@ int parse(int argc, char *argv[]){
    		system(command);
    		//return 1;
 	}
-	
-	/* 
-	WARNING !!
-		check encryption/decryption for
-				Rabin
-				Elgamal
-				
-		-> type of input/output + temp file (writelines)
-	*/	
+		
 	
 	if(flag){
 		server(port, encrypt);
@@ -79,7 +68,7 @@ int parse(int argc, char *argv[]){
 		client(host, port, encrypt);
 	}
 	
-	//system("python3 ../library/main.py -erase");
+	system("python3 ../library/main.py -erase");
    	
 	return 1;
 }
