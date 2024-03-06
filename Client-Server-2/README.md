@@ -1,5 +1,5 @@
 ## Client/Server
-Client/Server model (simple example).
+Client/Server model (to transfer files).
 
 Server:
 ```bash
@@ -7,6 +7,5 @@ Server:
 ```
 Client:
 ```bash
-./exec -h [ip_address] -p [port]
+./exec -h [host] -p [port] -f [filename]
 ```
-
