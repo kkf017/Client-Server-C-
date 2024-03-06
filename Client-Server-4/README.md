@@ -1,12 +1,12 @@
 ## Client/Server
-Client/Server model (simple example).
+Client/Server model (with encryption).
 
 Server:
 ```bash
-./exec -o -p [port]
+./exec -o -p [port] -rsa
 ```
 Client:
 ```bash
-./exec -h [ip_address] -p [port]
+./exec -h [host] -p [port] -rsa
 ```
 
