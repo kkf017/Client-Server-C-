@@ -43,8 +43,6 @@ int command(int argc, char *argv[]){
 		}		
 	}
 	
-	printf("\nARGUMENTS:\n\thost: %s, \n\tport: %d, \n\tflag: %d, \n\tfilename: %s \n\n", host, port, flag, filename);
-	
 	if(!flag && strcmp(host, "000.000.000.000") == 0){
 		perror("\n\033[0;91m[-]ERROR: Unknown host (opt. -h).\033[0m");
         	exit(EXIT_FAILURE);
