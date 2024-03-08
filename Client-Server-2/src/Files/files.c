@@ -20,7 +20,7 @@ char* file(char* filename){
 
 	while(ptr != NULL)
 	{
-		printf("'%s'\n", ptr);
+		//printf("'%s'\n", ptr);
 		f = ptr;
 		ptr = strtok(NULL, delim);
 	}
@@ -56,7 +56,7 @@ void send_(int sock, char* filename){
             if(x == EOF){
                 break;
             }
-            printf("%c",buffer[i]); // vers. with ./server > myprog.py
+            //printf("%c",buffer[i]); // vers. with ./server > myprog.py
         }
         send(sock, buffer, strlen(buffer), 0);
         bzero(buffer, FSIZE);
@@ -96,7 +96,7 @@ void rcv_(int sock){
                 		break;
 			}
 		      fputc(buffer[i], file); // vers. with file creation
-	              printf("%c",buffer[i]); // vers. with ./server > myprog.py
+	              //printf("%c",buffer[i]); // vers. with ./server > myprog.py
 	        }
 	}
 }
