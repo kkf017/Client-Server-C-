@@ -54,8 +54,8 @@ void client(char* host, int port, char* type){
     
   
     //char msg[128] = "@@@Hello :) smiLilly loves U. $$$ MagicUnixcorn";  
-    //char msg[128] = "@@@Hello :) smiLilly loves U. <3";
-    //scall(sock, msg, PubKeyServer, type);
+    char msg[128] = "@@@Hello :) smiLilly loves U. <3";
+    scall(sock, msg, PubKeyServer, type);
     
     
     handshake(sock, -1);

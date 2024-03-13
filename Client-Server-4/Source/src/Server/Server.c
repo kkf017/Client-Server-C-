@@ -72,8 +72,8 @@ void server(int port, char* type){
 	printf("\n\033[0;33m\tPublic Key (from Client):\033[0m %d %d %d.", *(PubKeyClient), *(PubKeyClient+1), *(PubKeyClient+2));
 	
         
-        //char* msg = rcall(sockClient, type);
-        //printf("\n\033[0;35m\tFrom client:\033[0m %s", msg);
+        char* msg = rcall(sockClient, type);
+        printf("\n\033[0;35m\tFrom client:\033[0m %s", msg);
         
         
         handshake(sockClient, 1);
