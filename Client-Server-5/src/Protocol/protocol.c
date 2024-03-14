@@ -75,7 +75,7 @@ char* encrypt(char* msg, int key[], char* type){
    	FILE *file = fopen("./data/temp-encrypt", "r");
    	fscanf(file, "%s", buff);   	
    	fclose(file);
-   	//remove("../data/temp-encrypt");
+   	remove("../data/temp-encrypt");
  
    	return buff;
 }
@@ -92,7 +92,7 @@ char* decrypt(char* msg, char* type){
    	FILE *file = fopen("./data/temp-decrypt", "r"); 
    	fgets(buff, BUFFER*4*8, file);	
    	fclose(file);
-   	//remove("../data/temp-decrypt");
+   	remove("../data/temp-decrypt");
    	
    	return buff;
 }
